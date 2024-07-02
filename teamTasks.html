@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teamTasks.css">
+    <title>Задачи</title>
+</head>
+<body>
+    <header>
+        <div class="userInfo">
+            <a href="cabinet.html" id="linkToCabinet">
+                <div class="userAvatar"><span id="firstLetter">Н</span></div>
+                <span class="userCabinetInfo" id="who">Личный кабинет пользователя Пользователь 1</span>    
+            </a>
+        </div>
+        <span id="team_name">Название команды</span>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <button id="backToPage">Назад к командам</button>
+        <div id="teamTasksSectionWrapper">
+            <div id="teamTasksSection">
+                <div id="teamTasksSectionHeader">
+                    <div id="wrapperAddTask">
+                        <span id="tasksSpan">Задачи команды</span>
+                        <button id="addTaskButton">Добавить задачу</button>
+                    </div>
+                    <div id="sortTasksButtons">
+                        <button id="myTasks">Мои задачи</button>
+                        <button id="allTasks">Все задачи</button>
+                    </div>
+                </div>
+                <hr style="width: 99%;">
+                <div id="tasksSection">
+                    <table>
+                        <thead>
+                            <tr id="thead">
+                                <th>Название задачи</th>
+                                <th>Описание задачи</th>
+                                <th>Дата создания</th>
+                                <th>Срок</th>
+                                <th>Статус</th>
+                                <th>Приоритет</th>
+                                <th>Выполняющий</th>
+                                <th></th>
+                                <th id="adminBtn"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="newTaskCreation">
+            <div id="taskFormWrapper">
+                <h2>Добавить новую задачу</h2>
+                <form id="taskForm">
+                    <label for="taskName">Название задачи:</label>
+                    <input type="text" id="taskName" name="taskName" required>
+        
+                    <label for="taskDescription">Описание задачи:</label>
+                    <textarea id="taskDescription" name="taskDescription" rows="4" required></textarea>
+        
+                    <label for="taskDueDate">Срок выполнения:</label>
+                    <input type="date" id="taskDueDate" name="taskDueDate" required>
+        
+                    <label for="taskPriority">Приоритет:</label>
+                    <select id="taskPriority" name="taskPriority" required>
+                        <option value="low">Низкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="high">Высокий</option>
+                    </select>
+        
+                    <label for="taskAssignedUser">Пользователь:</label>
+                    <select id="usersList"></select>
+
+                    <button type="submit">Добавить</button>
+                    <button type="button" id="cancelTask">Отмена</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script src="js/teamTask.js"></script>
+</body>
+</html>

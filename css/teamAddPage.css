@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53545b;
+    color: #fff;
+}
+header {
+    height: 60px;
+    background-color: #242629;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #b7b9d2;
+    border: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8a8ca0;
+}
+#logout {
+    margin-right: 10px;
+    color: #fff;
+}
+#logout:hover{
+    background-color: #c73c3c;
+    color: #fff;
+}
+.userInfo, #linkToCabinet {
+    height: 60px;
+    width: 450px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+#firstLetter { 
+    position: relative;
+    top: 5px;
+    align-self: center;
+    font-size: 25px;
+}
+.userAvatar {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.userCabinetInfo {
+    margin-right: 10px;
+}
+#teamInfoSection {
+    background-color: #3a3b41;
+    width: 1100px;
+    height: 700px;
+    margin: 0px 60px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+
+}
+#teamAvatar {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #b7b9d2;
+    border-radius: 15px;
+    background-color: #3a3b41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+#teamAvatar input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#teamAvatar img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#teamInfo {
+    display: flex;
+    flex-direction: column;
+}
+#teamAvatarWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+#teamLeaderManageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 30px;
+    display: none;
+}
+#deleteTeam:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+#teamLeaderManageButtons button {
+    width: 200px;
+    height: 30px;
+}
+#teamMemberManageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 30px;
+    display: none;
+}
+#leaveTeam:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+#teamMemberManageButtons button {
+    width: 200px;
+    height: 30px;
+}
+table {
+    margin-top: 20px;
+    width: 700px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: none;
+}
+#none {
+    display: none;
+
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: transparent;
+}
+
+td button {
+    width: 30px;
+    height: 20px;
+    color: #fff;
+}
+td button:hover {
+    background-color: #c73c3c;
+
+}
+#user_id {
+    display: none;
+}
+hr {
+    width: 30%;
+    
+}
+span {
+    text-align: justify;
+}
+input {
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: transparent;
+}
+hr {
+    margin-top: -25px;
+    width: 500px;
+}
+#createTeam {
+    margin-top: 20px;
+}
+
+#backToPage {
+    margin: 30px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/auth.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <form id="signUpForm" action="">
+        <h1 for="signUpForm">Регистрация</h1>
+
+        <label for="user_surname">Фамилия</label>
+        <input type="text" name="user_surname" id="user_surname" pattern="[А-Яа-яЁё\s\-]+" placeholder="Фамилия" required >
+        <hr>
+        <label for="user_name">Имя</label>
+        <input type="text" name="user_name" id="user_name" pattern="[А-Яа-яЁё\s\-]+" placeholder="Имя" required>
+        <hr>
+
+        <p id="nameError">Допустима только кириллица.</p>
+        <label for="user_login">Логин (только латиница)</label>
+        <input type="text" name="user_login" id="user_login" pattern="[a-zA-Z]+" placeholder="Логин" required>
+        <hr>
+
+        <p id="logError">Допустима только латиница.</p>
+
+        <label for="user_email">Почта</label>
+        <input type="email" name="user_email" id="user_email" placeholder="Почта" required>
+        <hr>
+
+        <label for="user_password">Пароль</label>
+        <input type="password" name="user_password" id="user_password" minlength="6" placeholder="Пароль" required>
+        <hr>
+
+        <label for="user_password_repeat">Повтор пароля</label>
+        <input type="password" name="user_password_repeat" id="user_password_repeat" minlength="6" placeholder="Повтор пароля" required>
+        <hr>
+
+        <p id="passError">Пароли не совпадают.</p>
+        <button type="submit" id="submitBtn">Зарегистрироваться</button>
+        <div class="login-link">
+            Уже зарегистрированы? <a href="login.html">Войти</a>
+        </div>
+
+    </form>
+    <script src="js/signUp.js"></script>
+</body>
+</html>

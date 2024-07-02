@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #595a63;
+    color: #fff;
+}
+
+header {
+    height: 60px;
+    background-color: #242629;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.userInfo, #linkToCabinet {
+    height: 60px;
+    width: 450px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+
+#firstLetter { 
+    position: relative;
+    top: 5px;
+    align-self: center;
+    font-size: 25px;
+}
+
+.userAvatar {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.userCabinetInfo {
+    margin-right: 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #b7b9d2;
+    border: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a8ca0;
+}
+
+#userData {
+    background-color: #3a3b41;
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#userData span {
+    color: #fff;
+    outline: none;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #3a3b41;
+}
+
+#userData input {
+    color: #fff;
+    outline: none;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #3a3b41;
+}
+
+#userData input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+#userData input:focus::placeholder {
+    font-size: 15px;
+}
+
+hr {
+    margin-top: -25px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#userData input:focus {
+    border: transparent;
+}
+
+#userData span {
+    margin-bottom: 7px;
+}
+
+#passwordChange {
+    flex-direction: column;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#showChangePasswordSection, #changePasswordConfim {
+    height: 30px;
+}
+
+#saveWrap {
+    align-self: last baseline;
+}
+
+#backToPage {
+    margin-bottom: 15px;
+}
+
+button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#logout:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+
+#changeUserData {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    height: 500px;
+    background-color: #242629;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+#DataFormWrapper {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#DataFormWrapper h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#userNewData label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#userNewData input[type="text"],
+#userNewData input[type="date"],
+#userNewData input[type="email"],
+#userNewData select,
+#userNewData textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #53545b;
+    color: #fff;
+}
+
+#userNewData textarea {
+    resize: vertical;
+}
+
+#userNewData button {
+    background-color: #45c73c;
+    color: #fff;    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#userNewData button[type="submit"] {
+    margin-right: 10px;
+}
+
+#userNewData button[type="submit"]:hover,
+#userNewData button[type="button"]:hover {
+    background-color: #3a9e37;
+}
+
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.alert-box {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.alert-box p {
+    margin-bottom: 20px;
+}
+
+#changePasswordModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #242629;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+#PasswordFormWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#PasswordFormWrapper h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#passwordChangeForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#passwordChangeForm input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #53545b;
+    color: #fff;
+}
+
+#passwordChangeForm button {
+    background-color: #45c73c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#passwordChangeForm button[type="submit"] {
+    margin-right: 10px;
+}
+
+#passwordChangeForm button[type="submit"]:hover,
+#passwordChangeForm button[type="button"]:hover {
+    background-color: #3a9e37;
+}

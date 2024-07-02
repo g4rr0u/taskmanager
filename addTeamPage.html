@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teamAddPage.css">
+    <title>Команда</title>
+</head>
+<body>
+    <header>
+        <div class="userInfo">
+            <a href="cabinet.html" id="linkToCabinet">
+                <div class="userAvatar"><span id="firstLetter">Н</span></div>
+                <span class="userCabinetInfo" id="who">Личный кабинет пользователя Пользователь 1</span>    
+            </a>
+        </div>
+        <span id="teamName">Название команды</span>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <button id="backToPage">Назад к командам</button>
+        <div id="teamInfoSection">
+            <div id="teamAvatarWrapper">
+                <div id="teamAvatar">
+                    <input type="file" name="teamAvatar" id="teamAvatarInput">
+                    <img id="teamAvatarPreview" src="#" alt="Team Avatar">
+                </div>
+                
+                <div id="teamLeaderManageButtons">
+                    <button id="editTeam">Изменить данные</button>
+                    <button id="deleteTeam">Удалить команду</button>
+                </div>
+                <div id="teamMemberManageButtons">
+                    <button id="leaveTeam">Покинуть команду</button>
+                </div>
+            </div>
+            <div id="teamInfo">
+                <span>Дайте название вашей команде</span>
+                <input type="text" id="team_name" placeholder="Название для вашей команды"></input>
+                <hr>
+                <span>Добавьте описание</span>
+                <input type="text" id="team_description" placeholder="Описание команды"></input>
+                <hr>
+                <button id="createTeam">Создать команду</button>
+                <span id="none">Участники команды</span>
+                <div id="tableWrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Логин</th>
+                                <th>Роль</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/addTeamPage.js"></script>
+</body>
+</html>

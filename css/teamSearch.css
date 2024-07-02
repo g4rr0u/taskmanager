@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53545b;
+    color: #fff;
+}
+header {
+    height: 60px;
+    background-color: #242629;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #b7b9d2;
+    border: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8a8ca0;
+}
+#logout {
+    margin-right: 10px;
+    color: #fff;
+}
+#logout:hover{
+    background-color: #c73c3c;
+    color: #fff;
+}
+.userInfo, #linkToCabinet {
+    height: 60px;
+    width: 450px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+#firstLetter { 
+    position: relative;
+    top: 5px;
+    align-self: center;
+    font-size: 25px;
+}
+.userAvatar {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.userCabinetInfo {
+    margin-right: 10px;
+}
+#searchContainer {
+    background-color: #3a3b41;
+    width: 1750px;
+    height: 700px;
+    margin: 0px 60px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+hr {
+    width: 100%;
+    margin-top: -25px;
+}
+input {
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: transparent;
+}
+input::placeholder{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+
+}
+input:focus{
+    border: transparent;
+}
+input:focus::placeholder {
+    color: transparent;
+    font-size: 15px;
+}
+
+#backToPage {
+    margin: 30px;
+    
+}
+#resultContainer {
+    border: 1px solid black;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    overflow-x: scroll;
+}
+.result {
+    border: 1px solid #8a8ca0;
+    background-color: #53545b;
+    height: 100px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+}
+#teamAvatar {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #8a8ca0;
+    border-radius: 25px;
+}
+#resultTeamInfo{
+    margin: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+#requestJoin {
+    height: 20px;
+    margin-bottom: 20px;
+}
+#team_id {
+    display: none;
+}

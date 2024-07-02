@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53545b;
+    color: #fff;
+}
+header {
+    height: 60px;
+    background-color: #242629;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #b7b9d2;
+    border: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8a8ca0;
+}
+#logout {
+    margin-right: 10px;
+    color: #fff;
+}
+#logout:hover{
+    background-color: #c73c3c;
+    color: #fff;
+}
+.userInfo, #linkToCabinet {
+    height: 60px;
+    width: 450px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+#firstLetter { 
+    position: relative;
+    top: 5px;
+    align-self: center;
+    font-size: 25px;
+}
+.userAvatar {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.userCabinetInfo {
+    margin-right: 10px;
+}
+#teamInfoSection {
+    background-color: #3a3b41;
+    width: 1100px;
+    height: 700px;
+    margin: 0px 60px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+
+}
+#teamAvatar {
+    width: 250px;
+    height: 242px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px 60px;
+}
+#teamInfo {
+    display: flex;
+    flex-direction: column;
+}
+#teamAvatarWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+#teamLeaderManageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: 30px;
+    display: none;
+}
+#deleteTeam:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+#teamLeaderManageButtons button {
+    width: 200px;
+    height: 30px;
+}
+#teamMemberManageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 30px;
+    display: none;
+}
+#leaveTeam:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+#teamMemberManageButtons button {
+    width: 200px;
+    height: 30px;
+}
+table {
+    margin-top: 20px;
+    width: 700px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: transparent;
+}
+
+td button {
+    width: 30px;
+    height: 20px;
+    color: #fff;
+}
+td button:hover {
+    background-color: #c73c3c;
+
+}
+#user_id {
+    display: none;
+}
+hr {
+    width: 30%;
+    
+}
+span {
+    text-align: justify;
+}
+#backToPage {
+    margin: 30px;
+  
+}
+#editTeamForm {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #242629;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+#teamEditForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#teamEditForm hr {
+    margin-top: -25px;
+    width: 100%;
+}
+#teamEditForm input,textarea {
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: transparent;
+}
+input::placeholder{
+    color: white;
+    font-size: 15px;
+
+}
+input:focus{
+    border: transparent;
+}
+input:focus::placeholder {
+    color: transparent;
+    font-size: 15px;
+}
+#teamEditForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7b9d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#teamEditForm button:hover {
+    background-color: #45c73c;
+
+}
+#cancel:hover {
+    background-color: #c73c3c;
+    color: #fff;
+}
+.deleteBtn {
+    display: none;
+}

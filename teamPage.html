@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teamPage.css">
+    <title>Команда</title>
+</head>
+<body>
+    <header>
+        <div class="userInfo">
+            <a href="cabinet.html" id="linkToCabinet">
+                <div class="userAvatar"><span id="firstLetter">Н</span></div>
+                <span class="userCabinetInfo" id="who">Личный кабинет пользователя Пользователь 1</span>    
+            </a>
+        </div>
+        <span id="teamName">Название команды</span>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <button id="backToPage">Назад к командам</button>
+        <div id="teamInfoSection">
+            <div id="teamAvatarWrapper">
+                <div id="teamAvatar">
+                    <img id="team_avatar" src="" alt="" width="250px" height="242px" style="border-radius: 15px;">
+                </div>
+                <div id="teamLeaderManageButtons">
+                    <button id="showRequest">Посмотреть заявки</button>
+                    <button id="editTeam">Редактировать команду</button>
+                    <button id="deleteTeam">Удалить команду</button>
+                </div>
+                <div id="teamMemberManageButtons">
+                    <button id="leaveTeam">Покинуть команду</button>
+                </div>
+            </div>
+            <div id="editTeamForm" >
+                <button id="cancel" value="Сохранить изменения" style="float: right; width: 60px;">Отмена</button>
+                <h2>Редактировать команду</h2>
+                <form id="teamEditForm">
+                    <label for="teamNameInput">Название команды:</label>
+                    <input type="text" id="teamNameInput" name="teamNameInput" required><br><br>
+                    <hr>
+            
+                    <label for="teamDescriptionInput">Описание команды:</label><br>
+                    <textarea id="teamDescriptionInput" name="teamDescriptionInput" rows="4" cols="50" required></textarea><br><br>
+            
+                    <label for="teamAvatarInput">Выберите новый аватар:</label>
+                    <input type="file" id="teamAvatarInput" name="teamAvatarInput" accept="image/*"><br><br>
+            
+                    <button type="submit" value="Сохранить изменения">Сохранить изменения</button>
+                </form>
+            </div>
+            
+            <div id="teamInfo">
+                <span>Название</span>
+                <span id="team_name"></span>
+                <hr>
+                <span>Дата создания</span>
+                <span id="team_creationDate"></span>
+                <hr>
+                <span>Описание</span>
+                <span id="team_description"></span>
+                <hr>
+                <span>Участники команды</span>
+                <div id="tableWrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Логин</th>
+                                <th>Роль</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="alert-overlay"></div>
+    <script src="js/teamPage.js"></script>
+</body>
+</html>

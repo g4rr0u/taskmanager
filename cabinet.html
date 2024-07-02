@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header>
+        <div class="userInfo">
+            <a href="cabinet.html" id="linkToCabinet">
+                <div class="userAvatar"><span id="firstLetter"></span></div>
+                <span class="userCabinetInfo" id="who">Личный кабинет пользователя Пользователь 1</span>    
+            </a>
+        </div>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <button id="backToPage">Назад к командам</button>
+        <div id="userData">
+            <label class="userData" style="margin-bottom: 25px;">Фамилия</label>
+            <span id="user_surname" class="userDataText">Кучерук</span>
+            <hr>
+            <span class="userData">Имя</span>
+            <span id="user_name" class="userDataText">Назар</span>
+            <hr>
+            <span class="userData">Почта</span>
+            <span id="user_email" class="userDataText">kucherukna_ot@mail.ru</span>
+            <hr>
+            <div>
+                <button id="editUserData">Редактировать</button>
+                <button id="changePasswordButton">Сменить пароль</button>
+            </div>
+            <div id="saveWrap">
+            </div>
+        </div>
+    </main>
+    <div id="changeUserData" style="display:none;">
+        <div id="DataFormWrapper">
+            <h2>Сменить данные</h2>
+            <form id="userNewData">
+                <label for="new_surname">Фамилия</label>
+                <input type="text" id="new_surname" name="new_surname">
+                <label for="new_name">Имя</label>
+                <input type="text" id="new_name" name="new_name">
+                <label for="new_email">Почта</label>
+                <input type="email" id="new_email" name="new_email">
+                <button type="submit">Сохранить</button>
+                <button type="button" id="cancelEdit">Отмена</button>
+            </form>
+        </div>
+    </div>
+    <div id="changePasswordModal" style="display:none;">
+        <div id="PasswordFormWrapper">
+            <h2>Сменить пароль</h2>
+            <form id="passwordChangeForm">
+                <label for="old_password">Старый пароль</label>
+                <input type="password" id="old_password" name="old_password" minlength="6">
+                <label for="new_password">Новый пароль</label>
+                <input type="password" id="new_password" name="new_password" minlength="6">
+                <button type="submit">Сохранить</button>
+                <button type="button" id="cancelPasswordChange">Отмена</button>
+            </form>
+        </div>
+    </div>
+    <div class="alert-overlay"></div>
+    <script src="js/cabinet.js"></script>
+</body>
+</html>

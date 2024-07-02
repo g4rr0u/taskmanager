@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53545b;
+    color: #fff;
+}
+header {
+    height: 60px;
+    background-color: #242629;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #b7b9d2;
+    border: transparent;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8a8ca0;
+}
+#logout {
+    margin-right: 10px;
+    color: #fff;
+}
+#logout:hover{
+    background-color: #c73c3c;
+    color: #fff;
+}
+#quit:hover{
+    background-color: #c73c3c;
+}
+#checkTasks:hover {
+    background-color: #45c73c;
+}
+.userInfo, #linkToCabinet {
+    height: 60px;
+    width: 450px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+#firstLetter { 
+    position: relative;
+    top: 5px;
+    align-self: center;
+    font-size: 25px;
+}
+.userAvatar {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.userCabinetInfo {
+    margin-right: 10px;
+}
+#teamSection {
+    background-color: #3a3b41;
+    align-self: center;
+    width: 100%;
+    border-radius: 25px;
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: row;
+}
+#teamSectionWrapper {
+    display: flex;
+    align-items: center;
+    width: 98.4%;
+    margin: 15px;
+}
+#teamContainer, .teamContainer {
+    border: 1px solid black;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+#teamContainer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: filter 0.3s ease; 
+}
+
+#teamContainer:hover img {
+    filter: blur(5px); 
+}
+#teamNameSpan{
+    z-index: 3;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3a3b41;
+}
+#buttonWrapper {
+    position: relative;
+    bottom: -50px; 
+    transition: bottom 0.3s ease; 
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none; 
+    opacity: 0; 
+}
+
+#teamContainer:hover #buttonWrapper {
+    bottom: 0; 
+    opacity: 1; 
+    pointer-events: auto; 
+}
+#buttonWrapper button{
+    margin-bottom: 15px;
+    width: 200px;
+}
+#teamContainer:hover {
+    border: 1px solid  #b6bbf9;
+    box-shadow: 15px 4px 20px #242629;
+
+}
+footer {
+    background-color: #242629;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 1px solid #53545b;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footerInfo, .footerSocial {
+    flex: 1;
+}
+
+.footerInfo ul, .footerSocial ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerSocial ul li {
+    margin-top: 5px;
+}
+
+.footerSocial ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerSocial ul li a:hover {
+    text-decoration: underline;
+}
+#buttonWrap {
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-box {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.alert-box p {
+    margin-bottom: 20px;
+}
+
+.alert-box button {
+    margin-right: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #b7b9d2;
+    align-self: center;
+}
+
+.alert-box button:hover {
+    background-color: #8a8ca0;
+}
