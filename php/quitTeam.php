@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 $user_id = $_POST['user_id'];
 $team_id = $_POST['team_id'];
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$db_name = 'tasker';
+$host =    getenv('DB_HOST');
+$username =getenv('DB_USER');
+$password =getenv('DB_PASS');
+$db_name = getenv('DB_NAME');
 
 $mysqli = new mysqli($host, $username, $password, $db_name);
 

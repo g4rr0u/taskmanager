@@ -3,10 +3,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$host = 'localhost';
-$db_name = 'tasker';
-$username = 'root';
-$password = '';
+$host =     getenv('DB_HOST');
+$db_name =  getenv('DB_NAME');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
 
 $mysqli = new mysqli($host, $username, $password, $db_name);
 

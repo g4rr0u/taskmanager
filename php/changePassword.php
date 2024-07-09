@@ -2,10 +2,10 @@
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $host = 'localhost';
-    $db = 'tasker';
-    $user = 'root';
-    $pass = '';
+    $host = getenv('DB_HOST');
+    $db =   getenv('DB_USER');
+    $user = getenv('DB_PASS');
+    $pass = getenv('DB_NAME');
 
     $mysqli = new mysqli($host, $user, $pass, $db);
 

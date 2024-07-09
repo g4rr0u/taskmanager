@@ -2,10 +2,10 @@
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['team_id'])) {
     $teamId = $_GET['team_id'];
 
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $db_name = 'tasker';
+    $host =    getenv('DB_HOST');
+    $username =getenv('DB_USER');
+    $password =getenv('DB_PASS');
+    $db_name = getenv('DB_NAME');
 
     $mysqli = new mysqli($host, $username, $password, $db_name);
 

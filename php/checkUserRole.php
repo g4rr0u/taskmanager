@@ -10,10 +10,10 @@ if(isset($data['user_id']) && isset($data['team_id'])) {
     $user_id = $data['user_id'];
     $team_id = $data['team_id'];
 
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $db_name = 'tasker';
+    $host =    getenv('DB_HOST');
+    $username =getenv('DB_USER');
+    $password =getenv('DB_PASS');
+    $db_name = getenv('DB_NAME');
 
     $mysqli = new mysqli($host, $username, $password, $db_name);
 

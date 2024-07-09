@@ -12,10 +12,10 @@ if (!isset($_POST['user_id'])) {
 }
 
 $user_id = $_POST['user_id'];
-$host = 'localhost';
-$db = 'tasker';
-$user = 'root';
-$pass = '';
+$host = getenv('DB_HOST');
+$db =   getenv('DB_NAME');
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASS');
 
 $mysqli = new mysqli($host, $user, $pass, $db);
 

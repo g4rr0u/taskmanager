@@ -8,10 +8,10 @@ $data = json_decode(file_get_contents('php://input'), true);
 if(isset($data['user_id'])) {
     $user_id = $data['user_id'];
 
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $db_name = 'tasker';
+    $host =    getenv('DB_HOST');
+    $username =getenv('DB_USER');
+    $password =getenv('DB_PASS');
+    $db_name = getenv('DB_NAME');
 
     $mysqli = new mysqli($host, $username, $password, $db_name);
 

@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tasker";
+$servername =  getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
+$dbname =   getenv('DB_NAME');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -15,7 +15,7 @@ $teamName = $_POST['teamNameInput'];
 $teamDescription = $_POST['teamDescriptionInput']; 
 
 if (!empty($_FILES['teamAvatarInput']['name'])) {
-    $uploadDirectory = 'C:\OSPanel\domains\taskmanager\media/'; 
+    $uploadDirectory = '/var/www/html/media/'; 
 
     $avatarName = uniqid('team_avatar_') . '.' . pathinfo($_FILES['teamAvatarInput']['name'], PATHINFO_EXTENSION);
 

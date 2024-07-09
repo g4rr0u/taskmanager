@@ -2,11 +2,11 @@
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $host = 'localhost';
-    $db = 'tasker';
-    $user = 'root';
-    $pass = '';
-
+    $host = getenv('DB_HOST');
+    $db =   getenv('DB_NAME');
+    $user = getenv('DB_USER');
+    $pass = getenv('DB_PASS');
+    
     $mysqli = new mysqli($host, $user, $pass, $db);
 
     if ($mysqli->connect_error) {
